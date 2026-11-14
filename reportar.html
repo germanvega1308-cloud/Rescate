@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huellas de Esperanza | reportar</title>
+</head>
+<body>
+<header>
+<p><strong>Huellas de Esperanza</strong></p>
+<h1>Prototipo estructural para el registro y seguimiento de animales rescatados</h1>
+<nav aria-label="Menú principal">
+<ul>
+<li><a href="index.html">Página principal</a></li>
+<li><a href="reportar.html">Crear reporte</a></li>
+<li><a href="rescates.html">Consultar registros</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h2>Formulario de registro</h2>
+<p>Complete los campos con información clara. Si algún dato no se conoce, evite inventarlo y describa únicamente lo observado.</p>
+<form action="#" method="get">
+<fieldset>
+<legend>Información del animal</legend>
+<p><label for="titulo">Título del caso o nombre provisional:</label><br>
+<input type="text" id="titulo" name="titulo" required></p>
+<p><label for="categoria">Tipo de animal:</label><br>
+<select id="categoria" name="categoria" required>
+<option value="">Seleccione una opción</option>
+<option value="Perros">Perros</option>
+<option value="Gatos">Gatos</option>
+<option value="Fauna Silvestre">Fauna Silvestre</option>
+</select></p>
+<fieldset>
+<legend>Prioridad de atención</legend>
+<p><input type="radio" id="alta" name="urgencia" value="Alta" required>
+<label for="alta">Alta – requiere atención prioritaria</label></p>
+<p><input type="radio" id="media" name="urgencia" value="Media">
+<label for="media">Media – requiere revisión</label></p>
+<p><input type="radio" id="baja" name="urgencia" value="Baja">
+<label for="baja">Baja – situación estable según lo observado</label></p>
+</fieldset>
+<p><label for="descripcion">Descripción del hallazgo:</label><br>
+<textarea id="descripcion" name="descripcion" rows="6" cols="55" required></textarea></p>
+<p><button type="submit">Enviar reporte</button>
+<button type="reset">Limpiar campos</button></p>
+</fieldset>
+</form>
+</section>
+</main>
+<footer>
+<p>Proyecto académico · Desarrollo de Sistemas Informáticos</p>
+<p>Universidad Técnica de Manabí</p>
+</footer>
+</body>
+</html>
